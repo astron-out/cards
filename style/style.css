@@ -1,0 +1,185 @@
+html {
+  font-size: 10px; }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #cccccc;
+  color: #777777;
+  font-family: "Lato", sans-serif; }
+
+.card {
+  height: 30rem;
+  width: 100%;
+  background-color: whitesmoke;
+  text-align: center;
+  margin: 0 auto;
+  padding: 7rem 1rem;
+  border-radius: 8px; }
+  .card:hover .card__icons {
+    transform: translateY(0);
+    opacity: 1; }
+  .card__link-img {
+    transition: all 0.4s; }
+    .card__link-img:hover {
+      filter: invert(49%) sepia(0%) saturate(11%) hue-rotate(138deg) brightness(94%) contrast(91%);
+      transform: scale(1.1); }
+  .card__person-photo {
+    display: inline-block;
+    width: 12rem;
+    height: 12rem;
+    background-image: linear-gradient(180deg, #fc7a0f 0%, #fc990f 50%, #f5aa42 100%);
+    border-radius: 50%; }
+  .card__person-name {
+    font-size: 2rem;
+    margin-bottom: 2rem; }
+  .card__person-bio {
+    font-size: 1.5rem;
+    color: #414141; }
+  .card__link-img {
+    width: 2rem;
+    height: 2rem; }
+  .card__icons {
+    width: 40%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 3rem;
+    transform: translateY(3rem);
+    opacity: 0;
+    transition: all 0.6s; }
+  .card__link:not(:last-child) {
+    margin-right: 0.5rem; }
+  .card__insta-clone {
+    height: 30rem;
+    width: 100%;
+    border-top: 1px solid #777777; }
+  .card__header {
+    display: flex;
+    position: relative;
+    padding: 1.5rem 0; }
+    .card__header-author-photo {
+      display: inline-block;
+      width: 4rem;
+      height: 4rem;
+      background-image: linear-gradient(45deg, #ffc919 0%, #db0063 100%);
+      border-radius: 50%;
+      margin-right: 1.3rem; }
+    .card__header-author-name {
+      display: inline-block;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #0a0a0a;
+      margin: auto 0;
+      text-decoration: none; }
+    .card__header-more-options {
+      display: inline-block;
+      position: absolute;
+      right: 0; }
+      .card__header-more-options:hover {
+        cursor: pointer; }
+    .card__header-option {
+      right: 1.5rem;
+      top: 2rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      background-color: #0a0a0a;
+      border-radius: 50%; }
+      .card__header-option, .card__header-option::after, .card__header-option::before {
+        position: absolute;
+        content: "";
+        width: 0.3rem;
+        height: 0.3rem;
+        background-color: #0a0a0a;
+        border-radius: 50%; }
+      .card__header-option::after {
+        left: -0.7rem; }
+      .card__header-option::before {
+        left: 0.7rem; }
+    .card__header-content-icon {
+      width: 2.2rem; }
+      .card__header-content-icon:not(:last-child) {
+        margin-right: 0.7rem; }
+      .card__header-content-icon:last-child {
+        float: inline-end; }
+      .card__header-content-icon:hover {
+        filter: invert(49%) sepia(0%) saturate(11%) hue-rotate(138deg) brightness(94%) contrast(91%);
+        cursor: pointer; }
+  .card__icon-con {
+    padding: 1rem 0; }
+  .card__item {
+    display: inline-block;
+    height: 27rem;
+    width: 100%;
+    background-image: linear-gradient(50deg, #ffc919, #db0063);
+    border-radius: 8px;
+    border: 1px solid #777777; }
+  .card__num-of-likes {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #0a0a0a;
+    margin: 0;
+    padding: 0; }
+  .card__des {
+    display: inline-block;
+    font-size: 1.4rem;
+    color: #0a0a0a;
+    margin-left: 0.5rem; }
+  .card__view-com {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #777777; }
+  .card__add-com {
+    font-size: 1.4rem;
+    margin-top: 1rem; }
+
+.glass-card {
+  position: relative;
+  height: 45rem;
+  width: 100%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.6px);
+  -webkit-backdrop-filter: blur(6.6px);
+  border: 1px solid rgba(255, 255, 255, 0.25); }
+  .glass-card__bg-glow {
+    position: absolute;
+    top: 17rem;
+    right: 33rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #fc990f;
+    border-radius: 50%;
+    filter: blur(5rem);
+    z-index: -9999; }
+  .glass-card__bg-glow-sec {
+    position: absolute;
+    top: 45rem;
+    right: 8rem;
+    width: 10rem;
+    height: 10rem;
+    background-color: #fc990f;
+    border-radius: 50%;
+    filter: blur(5rem);
+    z-index: -9999; }
+
+a.card__header-author-name:hover {
+  color: #777777; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto;
+  padding: 6rem 3rem; }
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 8rem; }
+
+.col-1-of-3 {
+  width: calc((100% - 2 * 8rem) / 3); }

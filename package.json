@@ -1,0 +1,14 @@
+{
+  "name": "animated_card_demo",
+  "version": "1.0.0",
+  "description": "Animated card",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  },
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss style/style.css -w"
+  },
+  "author": "Khudoyberdi Shamsiyev",
+  "license": "ISC"
+}
